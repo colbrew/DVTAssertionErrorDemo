@@ -1,7 +1,7 @@
 Demo project of DVTAssertions: 'missing IDE Target' Warning - FB13695124
 
 To reproduce:
-1. Use Xcode 15.1 version 15C65
+1. Use Xcode 15.1 version 15C65 or Xcode 15.2 version 15C500b
 
 2. Run `xcodebuild -workspace DVTAssertionErrorDemo.xcworkspace -scheme DVTAssertionErrorDemo -destination 'platform=iOS Simulator,name=iPhone 15,OS=17.2' build-for-testing -quiet` from terminal
 

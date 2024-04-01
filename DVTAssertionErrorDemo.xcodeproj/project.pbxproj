@@ -78,6 +78,7 @@
 				F30421F32BBAFA5600D74A70 /* DVTAssertionErrorDemoTests */,
 				F30421FD2BBAFA5600D74A70 /* DVTAssertionErrorDemoUITests */,
 				F30421E12BBAFA5300D74A70 /* Products */,
+				F304220E2BBAFB0800D74A70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +128,13 @@
 			path = DVTAssertionErrorDemoUITests;
 			sourceTree = "<group>";
 		};
+		F304220E2BBAFB0800D74A70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,6 +149,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F30422102BBAFBBF00D74A70 /* PBXTargetDependency */,
 			);
 			name = DVTAssertionErrorDemo;
 			productName = DVTAssertionErrorDemo;
@@ -215,6 +224,9 @@
 				Base,
 			);
 			mainGroup = F30421D72BBAFA5300D74A70;
+			packageReferences = (
+				F304220D2BBAFA7400D74A70 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = F30421E12BBAFA5300D74A70 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -291,6 +303,10 @@
 			isa = PBXTargetDependency;
 			target = F30421DF2BBAFA5300D74A70 /* DVTAssertionErrorDemo */;
 			targetProxy = F30421FB2BBAFA5600D74A70 /* PBXContainerItemProxy */;
+		};
+		F30422102BBAFBBF00D74A70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = F304220F2BBAFBBF00D74A70 /* Algorithms */;
 		};
 /* End PBXTargetDependency section */
 
@@ -430,6 +446,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +476,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -481,7 +499,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B4LU9K4J3F;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hotavocadoapps.DVTAssertionErrorDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -501,7 +519,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B4LU9K4J3F;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hotavocadoapps.DVTAssertionErrorDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -520,6 +538,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B4LU9K4J3F;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hotavocadoapps.DVTAssertionErrorDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -538,6 +557,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B4LU9K4J3F;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hotavocadoapps.DVTAssertionErrorDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -588,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F304220D2BBAFA7400D74A70 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F304220F2BBAFBBF00D74A70 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F304220D2BBAFA7400D74A70 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F30421D82BBAFA5300D74A70 /* Project object */;
 }
